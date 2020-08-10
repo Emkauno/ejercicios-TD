@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ejercicio 2</title>
+  <style media="screen" type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: inherit;
+    }
+
+    .main__container {
+      width: 100%;
+      height: 95vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+    }
+
+    .flag {
+      width: 40%;
+      height: 90%;
+      border: 1px solid black;
+      margin: 20px;
+    }
+
+    .japon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+    }
+
+    .japon__circle {
+      width: 200px;
+      height: 200px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .emiratos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .emiratos__red {
+      height: 100%;
+      width: 20%;
+      background: red;
+    }
+
+    .emiratos__right {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 80%;
+    }
+
+    .emiratos__right--green {
+      width: 100%;
+      height: 33%;
+      background: green;
+    }
+
+    .emiratos__right--white {
+      width: 100%;
+      height: 33%;
+      background: white;
+    }
+
+    .emiratos__right--black {
+      width: 100%;
+      height: 34%;
+      background: black;
+    }
+
+    .spain {
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spain__yellow {
+      width: 100%;
+      height: 33%;
+      background: yellow;
+    }
+
+    .denmark {
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .denmark__hor {
+      height: 40px;
+      background: white;
+      width: 100%;
+    }
+
+    .denmark__ver {
+      position: absolute;
+      height: 100%;
+      width: 40px;
+      top: 0;
+      left: 25%;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main__container">
+    <div class="container">
+      <div class="flag spain">
+        <div class="spain__yellow"></div>
+      </div>
+      <div class="flag denmark">
+        <div class="denmark__hor"></div>
+        <div class="denmark__ver"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flag emiratos">
+        <div class="emiratos__red"></div>
+        <div class="emiratos__right">
+          <div class="emiratos__right--green"></div>
+          <div class="emiratos__right--white"></div>
+          <div class="emiratos__right--black"></div>
+        </div>
+      </div>
+      <div class="flag japon">
+        <div class="japon__circle"></div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
